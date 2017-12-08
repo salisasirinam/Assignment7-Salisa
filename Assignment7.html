@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Assignment7_Salisa</title>
+</head>
+<body>
+	<h2>Simple Sign-Up Page</h2>
+
+	<!-- Username -->
+	<div>Username:
+		<input id="username" name="username" type="text" size="30" onblur="isUsernameOk(this, document.getElementById('name_username'))"/>
+		<span id="name_username"></span>
+	</div>
+
+	<!-- Password -->
+	<div>Password:
+		<input id="password" name="password" type="password" size="30" onblur="isPasswordOk(this, document.getElementById('name_password'))"/>
+		<span id="name_password"></span>
+	</div>
+
+	<!-- Password Confirm-->
+	<div>Password Confirmation: 
+		<input id="cfpassword" name="cfpassword" type="password" size="30" onblur="isCfPasswordOk(this, document.getElementById('name_cfpassword'))"/>
+		<span id="name_cfpassword"></span>
+	</div>
+
+	<!-- Email -->
+	<div>Email: 
+		<input id="email" name="email" type="text" size="30" onblur="isEmailOk(this, document.getElementById('name_email'))"/>
+		<span id="name_email"></span>
+	</div>
+
+	<script src="js/as7.js"></script>
+
+</body>
+</html>
